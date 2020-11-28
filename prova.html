@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prova</title>
+        <script type="text/javascript">
+            function ver () {
+                var pontos = 0;
+                if (document.frm.q1[3].checked) {
+                    pontos++;
+                }
+                document.getElementById("res") .innerHTML = pontos;
+            }
+        </script>
+    </head>
+    <body>
+        <form name="frm">
+            <p>
+                Questão 1 - CSS é <br><br>
+                <input type="radio" name="qi" value="a"> Uma linguagem de programação <br>
+                <input type="radio" name="qi" value="b"> Uma linguagem de programação <br>
+                <input type="radio" name="qi" value="c"> Uma linguagem de programação <br>
+                <input type="radio" name="qi" value="d"> Uma linguagem de programação <br>
+                <input type="radio" name="qi" value="e"> Uma linguagem de programação <br>
+            </p>
+            <input type="button" onclick="ver();" value="Ver resultado">
+        </form>
+        <p id="res"></p>
+    </body>
+</html>
